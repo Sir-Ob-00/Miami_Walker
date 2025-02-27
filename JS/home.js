@@ -4,9 +4,9 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
         content.classList.toggle('hidden');
 
          // Toggle icons between arrow-down and arrow-up
-         const icon = button.querySelector('i');
-         icon.classList.toggle('fa-angle-down');
-         icon.classList.toggle('fa-chevron-up');
+        const icon = button.querySelector('i');
+        icon.classList.toggle('fa-angle-down');
+        icon.classList.toggle('fa-chevron-up');
     });
 });
 
@@ -24,3 +24,30 @@ const slider = document.getElementById("testimonialSlider");
         }
 
         setInterval(slideTestimonials, 3000); // Slide every 3s
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    function animateCounter(element, start, end, duration) {
+        let startTime = null;
+
+        function updateCounter(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+            const currentValue = Math.floor(progress * (end - start) + start);
+            element.innerText = currentValue + (end >= 1000 ? "K+" : "+");
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            }
+        }
+
+        requestAnimationFrame(updateCounter);
+    }
+
+    const counters = document.querySelectorAll(".ratings-counter");
+    counters.forEach(counter => {
+        const targetValue = parseInt(counter.getAttribute("data-target"));
+        animateCounter(counter, 0, targetValue, 2000); // Runs for 2 seconds
+    });
+});
+
