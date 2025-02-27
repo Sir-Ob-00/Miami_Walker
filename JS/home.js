@@ -1,9 +1,9 @@
+//Code that toggles the FAQ section arrow down and up
+
 document.querySelectorAll('.faq-toggle').forEach(button => {
     button.addEventListener('click', () => {
         const content = button.nextElementSibling;
         content.classList.toggle('hidden');
-
-         // Toggle icons between arrow-down and arrow-up
         const icon = button.querySelector('i');
         icon.classList.toggle('fa-angle-down');
         icon.classList.toggle('fa-chevron-up');
@@ -11,21 +11,23 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
 });
 
 
+//Code for the slider section of the testimonials
 const slider = document.getElementById("testimonialSlider");
         let index = 0;
 
         function slideTestimonials() {
-            if (window.innerWidth >= 768) { // Only slide on md screens and larger
-                index = (index + 1) % 3; // Loop through 3 cards
-                slider.style.transform = `translateX(-${index * 420}px)`; // Adjust for width
+            if (window.innerWidth >= 768) { 
+                index = (index + 1) % 3; 
+                slider.style.transform = `translateX(-${index * 420}px)`; 
             } else {
-                slider.style.transform = "translateX(0)"; // Reset position on mobile
+                slider.style.transform = "translateX(0)";
             }
         }
+        setInterval(slideTestimonials, 3000); 
 
-        setInterval(slideTestimonials, 3000); // Slide every 3s
 
 
+//Code for the counter section of the ratings
 document.addEventListener("DOMContentLoaded", () => {
     function animateCounter(element, start, end, duration) {
         let startTime = null;
@@ -40,14 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 requestAnimationFrame(updateCounter);
             }
         }
-
         requestAnimationFrame(updateCounter);
     }
-
     const counters = document.querySelectorAll(".ratings-counter");
     counters.forEach(counter => {
         const targetValue = parseInt(counter.getAttribute("data-target"));
-        animateCounter(counter, 0, targetValue, 2000); // Runs for 2 seconds
+        animateCounter(counter, 0, targetValue, 2000);
     });
 });
 
