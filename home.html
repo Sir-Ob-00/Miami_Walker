@@ -6,6 +6,18 @@
         <title>MIAMI_WALKER</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <script>
         // Scroll Animation for the logos
@@ -20,7 +32,12 @@
                             'from': { transform: 'translateX(0)' },
                             'to': { transform: 'translateX(-50%)' }
                         }
-                    }
+                    },
+                    fontFamily:{
+                        'Jakarta':'Plus Jakarta Sans',
+                        'Poppins': 'Poppins',
+                        'Urbanist': 'Urbanist'
+                    },
                 }
             }
         };
@@ -39,7 +56,7 @@
         
         <!--Header with Navigation elements-->
         <header class="h-full">
-            <nav class="flex justify-between items-center px-10 md:px-20 py-10">
+            <nav class="flex justify-between items-center px-10 md:px-20 py-10 lg:px-40 font-Jakarta">
                 <div class="">
                     <img src="../Images/Xest Folio.png" alt="logo" class="w-20">
                 </div>
@@ -66,43 +83,43 @@
         </header>
 
         <!--HERO SECTION-->
-        <section class="flex flex-col md:flex-row-reverse items-center justify-center mt-10 max-w-6xl mx-auto px-4">
+        <section class="flex flex-col md:flex-row-reverse items-center justify-center mt-10 max-w-7xl mx-auto px-4 font-Jakarta">
 
             <div class="relative w-full md:w-1/2">
                 <img src="/Images/walker_home.jpg" alt="walker_home" class="w-full object-cover rounded-lg">
-                <span class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white text-8xl font-bold md:hidden">MIAMI</span>
+                <span class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white text-7xl font-bold md:hidden">MIAMI</span>
             </div>
         
-            <div class="text-center md:text-left p-10 w-full md:w-1/2 relative">
-                <div class="relative leading-none">
-                    <span class="hidden md:inline md:text-7xl font-bold bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text lg:text-8xl xl:text-9xl">MIAMI</span>
-                    <span class="text-7xl font-bold relative md:text-8xl lg:text-9xl xl:text-[9rem]">
+            <div class="md:text-center md:text-left md:p-10 w-full md:w-1/2 relative">
+                <div class="relative">
+                    <span class="hidden md:inline md:text-7xl font-bold bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text lg:text-8xl xl:text-[9rem]">MIAMI</span>
+                    <span class="pl-8 md:p-0 text-7xl font-bold md:font-extrabold relative md:text-8xl lg:text-9xl xl:text-[10rem]">
                         WALKE
-                        <span class="inline-block absolute md:text-white md:top-4 md:left-[19rem] md:px-4 lg:top-5 lg:left-[26.5rem] xl:top-6 xl:left-[30.5rem]">R</span>
+                        <span class="inline-block absolute md:text-white md:top-3 md:left-[19.2rem] md:px-4 lg:top-5 lg:left-[26.5rem] xl:top-6 xl:left-[34.5rem]">R</span>
                     </span>
                 </div>
         
-                <div class="mt-10 text-gray-700">
-                    <p class="text-xl md:text-lg">
-                        Award-winning product designer based in Georgia.<br>
+                <div class="mt-10 text-gray-700 text-center md:text-left">
+                    <p class="text-xl md:text-sm lg:text-xl">
+                        Award-winning product designer based in Georgia.
                         We create user-friendly interfaces for fast-growing startups.
                     </p>
                 </div>
         
-                <div class="mt-10">
+                <div class="mt-10 text-center">
                     <button class="relative px-6 py-3 text-white text-lg bg-black
                         before:absolute before:top-0 before:left-0 before:-z-10 
                         before:w-full before:h-full
                         before:bg-gradient-to-r before:from-[#3C33EF] before:to-[#F43366]
                         before:transition-all before:duration-300
-                        hover:before:top-2 hover:before:left-2">Book A Call</button>
+                        hover:before:top-2 hover:before:left-2 font-Urbanist">Book A Call</button>
                 </div>
             </div>
         </section>
         
 
         <!-- LOGO SLIDER SECTION -->
-    <section class="mt-20 flex justify-center items-center px-10">
+    <section class="mt-20 flex justify-center items-center px-10 lg:px-40">
         <div class="w-full overflow-hidden">
             <p class="text-center text-lg font-semibold mb-4 md:text-xl lg:text-2xl text-gray-500">Trusted By</p>
             <div class="flex overflow-hidden whitespace-nowrap relative">
@@ -124,13 +141,13 @@
     </section>
 
     <!-- FEATURES SECTION -->
-    <section class="mt-20 px-10">
+    <section class="mt-20 px-10 lg:px-40">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10  mx-auto">
             <!--Text with button-->
             <div>
-                <p class="uppercase bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text font-semibold md:font-bold text-2xl">features</p>
-                <p class="text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-bold mt-2">Giving Your Business Some Great Ideas</p>
-                <p class="text-gray-400 text-sm md:lg lg:text-xl xl:lg  mt-10">Every designer needs the right tools to do the perfect. 
+                <p class="uppercase bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text font-semibold md:font-bold text-2xl font-Jakarta">features</p>
+                <p class="text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-bold mt-2 font-Poppins">Giving Your Business Some Great Ideas</p>
+                <p class="text-gray-400 text-sm md:lg lg:text-xl xl:lg  mt-10 font-Jakarta">Every designer needs the right tools to do the perfect. 
                     Thankfully, we can do that. I design products that are more than pretty.
                     I make them shippable na usable.
                 </p>
@@ -141,7 +158,7 @@
                         before:w-full before:h-full
                         before:bg-gradient-to-r before:from-[#3C33EF] before:to-[#F43366]
                         before:transition-all before:duration-300
-                        hover:before:top-2 hover:before:left-2">Book A Call</button>
+                        hover:before:top-2 hover:before:left-2 font-Urbanist">Book A Call</button>
                 </div>
             </div>
 
@@ -192,11 +209,11 @@
 
         
     <!-- RATINGS SECTION -->
-    <section class="my-20 py-10 text-center hidden md:block">
+    <section class="my-20 py-10 lg:px-20 text-center hidden md:block">
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
             <!-- Customers Served -->
             <div class="flex flex-col items-center">
-                <span class=" ratings-counter text-6xl font-extrabold text-transparent bg-white bg-clip-text" data-target="12"
+                <span class=" ratings-counter text-6xl font-extrabold font-Poppins" data-target="12"
                 style="
                         -webkit-text-stroke: 3px transparent;
                         background-image: linear-gradient(to right, #3C33EF, #F43366);
@@ -205,12 +222,12 @@
                         -webkit-text-fill-color: white;">
                     12K+
                 </span>
-                <span class="text-lg mt-2 opacity-80">Project Complete</span>
+                <span class="text-lg mt-2 opacity-80 font-Jakarta">Project Complete</span>
             </div>
 
             <!-- Positive Reviews -->
             <div class="flex flex-col items-center">
-                <span class="ratings-counter text-6xl font-extrabold text-transparent bg-white bg-clip-text" data-target="7"
+                <span class="ratings-counter text-6xl font-extrabold font-Poppins" data-target="7"
                 style="
                         -webkit-text-stroke: 3px transparent;
                         background-image: linear-gradient(to right, #3C33EF, #F43366);
@@ -219,12 +236,12 @@
                         -webkit-text-fill-color: white;">
                     7K+
                 </span>
-                <span class="text-lg mt-2 opacity-80">Happy Client</span>
+                <span class="text-lg mt-2 opacity-80 font-Jakarta">Happy Client</span>
             </div>
 
             <!-- Years of Experience -->
             <div class="flex flex-col items-center">
-                <span class="ratings-counter text-6xl font-extrabold text-transparent bg-white bg-clip-text" data-target="10"
+                <span class="ratings-counter text-6xl font-extrabold font-Poppins" data-target="10"
                 style="
                         -webkit-text-stroke: 3px transparent;
                         background-image: linear-gradient(to right, #3C33EF, #F43366);
@@ -233,12 +250,12 @@
                         -webkit-text-fill-color: white;">
                     10K+
                 </span>
-                <span class="text-lg mt-2 opacity-80">Years Experience</span>
+                <span class="text-lg mt-2 opacity-80 font-Jakarta">Years Experience</span>
             </div>
 
             <!-- Awards Won -->
             <div class="flex flex-col items-center">
-                <span class="ratings-counter text-6xl font-extrabold text-transparent bg-white bg-clip-text" data-target="270"
+                <span class="ratings-counter text-6xl font-extrabold font-Poppins" data-target="270"
                 style="
                         -webkit-text-stroke: 3px transparent;
                         background-image: linear-gradient(to right, #3C33EF, #F43366);
@@ -247,7 +264,7 @@
                         -webkit-text-fill-color: white;">
                     270K+
                 </span>
-                <span class="text-lg mt-2 opacity-80">Win Awards</span>
+                <span class="text-lg mt-2 opacity-80 font-Jakarta">Win Awards</span>
             </div>
         </div>
     </section>
@@ -255,11 +272,11 @@
 
 
     <!--PORTFOLIO IMAGE GRID-->
-    <section class="mt-20 px-10">
+    <section class="mt-20 px-10 lg:px-40">
         <div class="md:flex justify-between">
             <div>
-                <p class="uppercase text-2xl bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text">Portfolio</p>
-                <p class="font-bold text-3xl md:text-4xl">Some Of Our Best Works</p>
+                <p class="uppercase text-2xl bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text font-Jakarta">Portfolio</p>
+                <p class="font-bold text-3xl md:text-4xl font-Poppins">Some Of Our Best Works</p>
             </div>
             <div class="mt-10">
                 <button class="relative px-6 py-3 text-white text-lg bg-black
@@ -267,7 +284,7 @@
                     before:w-full before:h-full
                     before:bg-gradient-to-r before:from-[#3C33EF] before:to-[#F43366]
                     before:transition-all before:duration-300
-                    hover:before:top-2 hover:before:left-2">Load More</button>
+                    hover:before:top-2 hover:before:left-2 font-Urbanist">Load More</button>
             </div>
         </div>
         <!-- Image Grid -->
@@ -275,52 +292,52 @@
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 <!-- First Row -->
                 <div class="lg:col-span-2 relative">
-                    <img src="/Images/laptop_1.jpg" alt="Portfolio1" class="w-full h-48 object-cover">
-                    <div class="absolute inset-0 flex flex-col top-28 xl:top-24 left-5">
+                    <img src="/Images/laptop_1.jpg" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
+                    <div class="absolute flex flex-col top-28 lg:top-40 xl:top-64 left-5">
                         <p class="text-lg lg:text-2xl xl:text-3xl font-bold bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text">UI DESIGN</p>
                         <p class="text-[#FFD9D9] font-bold text-2xl lg:text-4xl xl:text-5xl">Greenfy Website</p>
                     </div>
                 </div>
                 <div>
-                    <img src="/Images/Rectangle 39.png" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/Rectangle 39.png" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
                 <div>
-                    <img src="/Images/Rectangle 43.png" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/Rectangle 43.png" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
 
                 <!-- Second Row -->
                 <div class="hidden lg:block">
-                    <img src="/Images/Rectangle 61.png" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/Rectangle 61.png" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
                 <div class="hidden lg:block">
-                    <img src="/Images/Rectangle 60.png" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/Rectangle 60.png" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
                 <div class="hidden lg:block col-span-2">
-                    <img src="/Images/Rectangle 59.png" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/Rectangle 59.png" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
 
                 <!-- Third Row -->
                 <div class="hidden lg:block lg:col-span-2">
-                    <img src="/Images/laptop_1.jpg" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/laptop_1.jpg" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
                 <div class="hidden lg:block">
-                    <img src="/Images/Rectangle 39.png" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/Rectangle 39.png" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
                 <div class="hidden lg:block">
-                    <img src="/Images/Rectangle 43.png" alt="Portfolio1" class="w-full h-48 object-cover">
+                    <img src="/Images/Rectangle 43.png" alt="Portfolio1" class="w-full h-48 lg:h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- LATEST BLOG SECTION -->
-    <section class="bg-black mt-20 px-10 py-20">
+    <section class="bg-black mt-20 px-10 py-20 lg:px-40">
         <div>
             <div class="md:flex justify-between gap-10">
                 <div>
-                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text font-bold text-lg md:text-2xl">LATEST BLOG</p>
-                    <p class="text-white text-2xl md:text-3xl lg:4xl font-bold">Check Some Of Latest</p>
-                    <p class="text-white text-2xl font-bold md:text-3xl lg:4xl">News & Articles</p>
+                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text font-bold text-lg md:text-2xl font-Jakarta">LATEST BLOG</p>
+                    <p class="text-white text-2xl md:text-3xl lg:4xl font-bold font-Poppins">Check Some Of Latest</p>
+                    <p class="text-white text-2xl font-bold md:text-3xl lg:4xl font-Poppins">News & Articles</p>
                 </div>
                 <div class="mt-10">
                     <button class="relative px-6 py-3 text-black text-lg bg-white
@@ -328,76 +345,76 @@
                         before:w-full before:h-full
                         before:bg-gradient-to-r before:from-[#3C33EF] before:to-[#F43366]
                         before:transition-all before:duration-300
-                        hover:before:top-2 hover:before:left-2">Load More</button>
+                        hover:before:top-2 hover:before:left-2 font-Urbanist">Load More</button>
                 </div>
             </div>
 
-            <div class="container mx-auto px-5 lg:px-20 py-10">
+            <div class="container mx-auto px-5 py-10">
                 <div class="grid md:grid-cols-2 gap-x-6 gap-y-60 mb-44">
                     <!-- Blog Card 1 -->
                     <div class="relative bg-gray-800">
                         <img src="/Images/image_blog_one.png" alt="Blog Image" class="w-full">
                         <div class="absolute left-12 top-32 xl:top-60 p-2 bg-black">
-                            <p class="text-gray-400 text-sm">UI Design | 22 May 2023</p>
-                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2">What is UI Design in Front</h3>
-                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold">End Design?</p>
-                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
-                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block">READ MORE <span class="">→</span></a>
+                            <p class="text-gray-400 text-sm font-Jakarta">UI Design | 22 May 2023</p>
+                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2 font-Poppins">What is UI Design in Front</h3>
+                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold font-Poppins">End Design?</p>
+                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2 font-Jakarta">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block font-Jakarta">READ MORE <span class="">→</span></a>
                         </div>
                     </div>
                     <!-- Blog Card 2 -->
                     <div class="relative bg-gray-800">
                         <img src="/Images/image_blog_one.png" alt="Blog Image" class="w-full">
                         <div class="absolute left-12 top-32 xl:top-60 p-2 bg-black">
-                            <p class="text-gray-400 text-sm">UI Design | 22 May 2023</p>
-                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2">What is UI Design in Front</h3>
-                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold">End Design?</p>
-                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
-                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block">READ MORE <span class="">→</span></a>
+                            <p class="text-gray-400 text-sm font-Jakarta">UI Design | 22 May 2023</p>
+                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2 font-Poppins">What is UI Design in Front</h3>
+                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold font-Poppins">End Design?</p>
+                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2 font-Jakarta">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block font-Jakarta">READ MORE <span class="">→</span></a>
                         </div>
                     </div>
                     <!-- Blog Card 3 -->
                     <div class="relative bg-black hidden lg:block">
                         <img src="/Images/image_blog_one.png" alt="Blog Image" class="w-full">
                         <div class="absolute left-12 top-40 xl:top-60 p-2 bg-black">
-                            <p class="text-gray-400 text-sm">UI Design | 22 May 2023</p>
-                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2">What is UI Design in Front</h3>
-                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold">End Design?</p>
-                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
-                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block">READ MORE <span class="">→</span></a>
+                            <p class="text-gray-400 text-sm font-Jakarta">UI Design | 22 May 2023</p>
+                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2 font-Poppins">What is UI Design in Front</h3>
+                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold font-Poppins">End Design?</p>
+                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2 font-Jakarta">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block font-Jakarta">READ MORE <span class="">→</span></a>
                         </div>
                     </div>
                     <!-- Blog Card 4 -->
                     <div class="relative bg-black hidden lg:block">
                         <img src="/Images/image_blog_one.png" alt="Blog Image" class="w-full">
                         <div class="absolute left-12 top-40 xl:top-60 p-2 bg-black">
-                            <p class="text-gray-400 text-sm">UI Design | 22 May 2023</p>
-                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2">What is UI Design in Front</h3>
-                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold">End Design?</p>
-                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
-                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block">READ MORE <span class="">→</span></a>
+                            <p class="text-gray-400 text-sm font-Jakarta">UI Design | 22 May 2023</p>
+                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2 font-Poppins">What is UI Design in Front</h3>
+                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold font-Poppins">End Design?</p>
+                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2 font-Jakarta">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block font-Jakarta">READ MORE <span class="">→</span></a>
                         </div>
                     </div>
                     <!-- Blog Card 5 -->
                     <div class="relative bg-black hidden lg:block">
                         <img src="/Images/image_blog_one.png" alt="Blog Image" class="w-full">
                         <div class="absolute left-12 top-40 xl:top-60 p-2 bg-black">
-                            <p class="text-gray-400 text-sm">UI Design | 22 May 2023</p>
-                            <h3 class="text-xl lg:text-2xl xl:text-3xl font-bold mt-2">What is UI Design in Front</h3>
-                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold">End Design?</p>
-                            <p class="text-white text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
-                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block">READ MORE <span class="">→</span></a>
+                            <p class="text-gray-400 text-sm font-Jakarta">UI Design | 22 May 2023</p>
+                            <h3 class="text-xl lg:text-2xl xl:text-3xl font-bold mt-2 font-Poppins">What is UI Design in Front</h3>
+                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold font-Poppins">End Design?</p>
+                            <p class="text-white text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2 font-Jakarta">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block font-Jakarta">READ MORE <span class="">→</span></a>
                         </div>
                     </div>
                     <!-- Blog Card 6 -->
                     <div class="relative bg-black hidden lg:block ">
                         <img src="/Images/image_blog_one.png" alt="Blog Image" class="w-full">
                         <div class="absolute left-12 top-40 xl:top-60 p-2 bg-black">
-                            <p class="text-gray-400 text-sm">UI Design | 22 May 2023</p>
-                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2">What is UI Design in Front</h3>
-                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold">End Design?</p>
-                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
-                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block">READ MORE <span class="">→</span></a>
+                            <p class="text-gray-400 text-sm font-Jakarta">UI Design | 22 May 2023</p>
+                            <h3 class="text-white text-xl lg:text-2xl xl:text-3xl font-bold mt-2 font-Poppins">What is UI Design in Front</h3>
+                            <p class="text-white text-xl lg:text-2xl xl:text-3xl font-bold font-Poppins">End Design?</p>
+                            <p class="text-gray-400 text-sm md:text-md lg:text-xl xl:text-2xl mt-2 font-Jakarta">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+                            <a href="#" class="text-white md:text-lg lg:text-xl font-semibold mt-4 inline-block font-Jakarta">READ MORE <span class="">→</span></a>
                         </div>
                     </div>
                 </div>
@@ -405,57 +422,58 @@
         </div>
     </section>
 
-
+    
     <!-- TESTIMONIALS SLIDER SECTION -->
-    <section class="max-w-6xl mx-auto px-6 py-12 mt-20">
+    <section class="max-w-full mx-auto px-6 py-12 mt-20 overflow-hidden">
         <!-- Heading -->
-        <h5 class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text uppercase font-semibold text-center tracking-wide">Testimonials</h5>
-        <h2 class="text-2xl font-bold text-center mt-2">What our customers say</h2>
+        <h5 class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text uppercase font-semibold text-center md:text-xl lg:text-2xl font-Jakarta">Testimonials</h5>
+        <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-center mt-2 font-Poppins">What our customers say</h2>
 
-        <!-- Testimonials Container -->
-        <div class="mt-8 ">
-            <div id="testimonialSlider" class="grid grid-cols-1 gap-4 md:flex md:space-x-6 transition-transform duration-700">
+        <!-- Slider Wrapper -->
+        <div class="mt-8 relative overflow-hidden font-Poppins">
+            <div id="testimonialSlider" class="flex flex-col md:flex-row md:space-x-6 transition-transform duration-700">
                 <!-- Card 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md w-full md:min-w-[400px]">
-                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text text-6xl"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
-                    <p class="text-gray-600">"Now, I can track my business activity with ease and have a great understanding to operate the products."</p>
+                <div class="testimonial-card bg-white p-6 md:p-10 lg:p-12 rounded-lg shadow-md w-full md:w-[600px] lg:w-[700px] flex-shrink-0">
+                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text text-4xl md:text-5xl lg:text-6xl"><i class="fa fa-quote-left"></i></p>
+                    <p class="text-gray-600 my-5 md:text-xl lg:text-2xl">"Now, I can track my business activity with ease and have a great understanding to operate the products."</p>
                     <div class="flex items-center mt-4">
-                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Berry Gunawan" class="w-10 h-10 rounded-full mr-3">
-                        <p class="font-semibold">Berry Gunawan</p>
-                        <span class="text-yellow-400 ml-auto">⭐ 3.5</span>
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Berry Gunawan" class="w-12 h-12 rounded-full mr-3">
+                        <p class="font-semibold text-xl">Berry Gunawan</p>
+                        <span class="ml-auto font-bold"><i class="fa fa-star text-yellow-400 mr-2" aria-hidden="true"></i>3.5</span>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md w-full md:min-w-[400px]">
-                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text text-6xl"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
-                    <p class="text-gray-600">"Now, I can track my business activity with ease and have a great understanding to operate the products."</p>
+                <div class="testimonial-card bg-white p-6 md:p-10 lg:p-12 rounded-lg shadow-md w-full md:w-[600px] lg:w-[700px] flex-shrink-0">
+                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text text-4xl md:text-5xl lg:text-6xl"><i class="fa fa-quote-left"></i></p>
+                    <p class="text-gray-600 my-5 md:text-xl lg:text-2xl">"Now, I can track my business activity with ease and have a great understanding to operate the products."</p>
                     <div class="flex items-center mt-4">
-                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Janne Cooper" class="w-10 h-10 rounded-full mr-3">
-                        <p class="font-semibold">Janne Cooper</p>
-                        <span class="text-yellow-400 ml-auto">⭐ 3.5</span>
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Janne Cooper" class="w-12 h-12 rounded-full mr-3">
+                        <p class="font-bold text-xl">Janne Cooper</p>
+                        <span class="font-bold ml-auto"><i class="fa fa-star text-yellow-400 mr-2" aria-hidden="true"></i> 3.5</span>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md w-full md:min-w-[400px]">
-                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text text-6xl"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
-                    <p class="text-gray-600">"Now, I can track my business activity with ease and have a great understanding to operate the products."</p>
+                <div class="testimonial-card bg-white p-6 md:p-10 lg:p-12 rounded-lg shadow-md w-full md:w-[600px] lg:w-[700px] flex-shrink-0">
+                    <p class="bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text text-4xl md:text-5xl lg:text-6xl"><i class="fa fa-quote-left"></i></p>
+                    <p class="text-gray-600 my-5 md:text-xl lg:text-2xl">"Now, I can track my business activity with ease and have a great understanding to operate the products."</p>
                     <div class="flex items-center mt-4">
-                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Cobocannaeru" class="w-10 h-10 rounded-full mr-3">
-                        <p class="font-semibold">Cobocannaeru</p>
-                        <span class="text-yellow-400 ml-auto">⭐ 3.5</span>
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Cobocannaeru" class="w-12 h-12 rounded-full mr-3">
+                        <p class="font-bold text-xl">Cobocannaeru</p>
+                        <span class="font-bold ml-auto"><i class="fa fa-star text-yellow-400 mr-2" aria-hidden="true"></i>3.5</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!--FAQs SECTION-->
     <section class="bg-black text-white py-16 px-6 mt-20">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
            
-            <div class="order-2 md:order-1 space-y-4">
+            <div class="order-2 md:order-1 space-y-4 font-Jakarta">
                 <div class="bg-gray-900 rounded-lg">
                     <button class="w-full flex justify-between items-center p-4 text-sm md:text-lg faq-toggle">
                         How can we help your business?
@@ -491,10 +509,10 @@
 
             
             <div class="order-1 md:order-2">
-                <h5 class="uppercase text-2xl font-bold tracking-wide bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text">FAQs</h5>
-                <h2 class="text-3xl lg:text-4xl font-bold mt-2">Be Kind to Your Mind</h2>
-                <h2 class="text-3xl lg:text-4xl font-bold">Question & Answer</h2>
-                <p class="text-gray-400 mt-4">
+                <h5 class="uppercase text-2xl font-bold tracking-wide bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text font-Jakarta">FAQs</h5>
+                <h2 class="text-3xl lg:text-4xl font-bold mt-2 font-Poppins">Be Kind to Your Mind</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold font-Poppins">Question & Answer</h2>
+                <p class="text-gray-400 mt-4 font-Jakarta">
                     All your questions are in a document, in a question-and-answer format, that introduces newcomers to a topic or answers common questions.
                 </p>
             </div>
@@ -505,14 +523,14 @@
     <footer class="mt-20 ">
         <div class="flex flex-col justify-center items-center gap-10 px-10">
             <div>
-                <p class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text">Have you project in mind?</p>
-                <p class="mt-3 text-center text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Let's Make Something Great Together!</p>
+                <p class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center bg-gradient-to-r from-[#3C33EF] to-[#F43366] text-transparent bg-clip-text font-Jakarta">Have you project in mind?</p>
+                <p class="mt-3 text-center text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-Poppins">Let's Make Something Great Together!</p>
             </div>
             
             <!--Circle with text-->
             <div class="flex justify-center items-center">
                 <div class="uppercase w-32 h-32 md:w-44 md:h-44 flex flex-col justify-center items-center rounded-full bg-gradient-to-b from-[#3C33EF] to-[#F43366] text-white relative">
-                    <span class="text-sm md:text-lg">Contact with us</span>
+                    <span class="text-sm md:text-lg font-Jakarta">Contact with us</span>
                     <div class="absolute bottom-7 md:bottom-8 lg:bottom-9 xl:bottom-10 rotate-45">
                         <i class="fa fa-arrow-up" aria-hidden="true"></i>
                     </div>
@@ -556,13 +574,13 @@
                 
                 <!--Privacy and Terms Section-->
                 
-            <div class="my-5 text-center md:hidden">
+            <div class="my-5 text-center md:hidden font-Poppins">
                 <p class="text-gray-400 text-xl">Privacy Policy | Terms and condition</p>
             </div>
 
             <hr class="w-full border-2 border-gray-400 md:mt-5">
             
-            <div class="md:flex justify-around items-center gap-5 px-10 mb-10">
+            <div class="md:flex justify-around items-center gap-5 px-10 mb-10 font-Poppins">
                 <div class="my-5 text-center hidden">
                     <p class="text-gray-400 text-xl">Privacy Policy | Terms and condition</p>
                 </div>
